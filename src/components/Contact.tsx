@@ -38,8 +38,8 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Replace this with your actual Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = "REPLACE_WITH_YOUR_ACTUAL_SCRIPT_URL";
+      // Google Apps Script Web App URL
+      const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx5BNAIbZyY2q3Kt9M4Gb8HuQnfeg4B6jTQ3eg--O94rCnodES9p1SPGTuZD1IE07xBTQ/exec";
       
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
