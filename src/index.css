@@ -6,52 +6,52 @@
 
 @layer base {
   :root {
-    /* Nolon AI Brand Colors */
-    --primary: 220 100% 50%; /* #0066FF - AI Intelligence Blue */
+    /* Mobbin-Inspired Brand Colors */
+    --primary: 239 84% 67%; /* #6366F1 - Primary Purple */
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 220 100% 30%; /* #003D99 - Deep Tech Blue */
-    --primary-light: 195 100% 50%; /* #00E5FF - Clean Future Cyan */
+    --primary-dark: 243 75% 59%; /* #4338CA - Deep Purple */
+    --primary-light: 232 97% 85%; /* #A5B4FC - Light Purple */
     
     /* Sophisticated Neutrals */
-    --background: 0 0% 100%;
-    --foreground: 220 15% 14%; /* #212529 - Authority Dark */
-    --surface: 210 17% 97%; /* #F8F9FA - Clean Surface */
-    --surface-elevated: 0 0% 100%;
+    --background: 0 0% 100%; /* #FFFFFF - White */
+    --foreground: 217 33% 17%; /* #111827 - Primary Text */
+    --surface: 0 0% 100%; /* #FFFFFF - White */
+    --surface-elevated: 220 14% 96%; /* #F3F4F6 - Light Gray */
     
     /* Semantic Colors */
-    --muted: 210 12% 43%; /* #6C757D - Professional Gray */
-    --muted-foreground: 210 9% 68%; /* #ADB5BD - Meta Text */
-    --accent: 195 100% 50%; /* Cyan accent */
+    --muted: 220 14% 96%; /* #F3F4F6 - Light Gray */
+    --muted-foreground: 220 13% 46%; /* #6B7280 - Secondary Gray */
+    --accent: 0 0% 0%; /* #000000 - Black for buttons */
     --accent-foreground: 0 0% 100%;
     
     /* Status Colors */
-    --success: 142 76% 36%; /* #28A745 - Efficiency Green */
-    --warning: 18 100% 60%; /* #FF6B35 - Innovation Orange */
-    --destructive: 354 84% 60%; /* #DC3545 - Critical Red */
+    --success: 160 84% 39%; /* #10B981 - Success Green */
+    --warning: 43 96% 56%; /* #F59E0B - Warning Orange */
+    --destructive: 0 84% 60%; /* #EF4444 - Error Red */
     --destructive-foreground: 0 0% 100%;
     
     /* UI Elements */
-    --border: 210 20% 92%; /* #E9ECEF - Subtle borders */
-    --input: 210 20% 92%;
-    --ring: 220 100% 50%;
+    --border: 220 13% 82%; /* #D1D5DB - Border Gray */
+    --input: 220 13% 91%; /* Input Background */
+    --ring: 239 84% 67%; /* Primary Purple for focus rings */
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 14%;
+    --card-foreground: 217 33% 17%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 14%;
-    --secondary: 210 17% 97%;
-    --secondary-foreground: 220 15% 14%;
+    --popover-foreground: 217 33% 17%;
+    --secondary: 220 14% 96%; /* #F3F4F6 - Light Gray */
+    --secondary-foreground: 217 33% 17%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 100% 50%) 0%, hsl(195 100% 50%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(220 100% 30%) 0%, hsl(220 100% 50%) 50%, hsl(195 100% 50%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 17% 97%) 100%);
-    --gradient-surface: linear-gradient(135deg, hsl(210 17% 97%) 0%, hsl(0 0% 100%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(239 84% 67%) 0%, hsl(232 97% 85%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(243 75% 59%) 0%, hsl(239 84% 67%) 50%, hsl(232 97% 85%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 96%) 100%);
+    --gradient-surface: linear-gradient(135deg, hsl(220 14% 96%) 0%, hsl(0 0% 100%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 2px 8px hsl(220 15% 14% / 0.08);
-    --shadow-medium: 0 4px 16px hsl(220 15% 14% / 0.12);
-    --shadow-strong: 0 8px 32px hsl(220 15% 14% / 0.16);
-    --shadow-brand: 0 8px 25px hsl(220 100% 50% / 0.15);
+    --shadow-soft: 0 2px 8px hsl(217 33% 17% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(217 33% 17% / 0.12);
+    --shadow-strong: 0 8px 32px hsl(217 33% 17% / 0.16);
+    --shadow-brand: 0 8px 25px hsl(239 84% 67% / 0.15);
     
     /* Animation */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
