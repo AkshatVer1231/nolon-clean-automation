@@ -1,5 +1,5 @@
 import { Award, MapPin, GraduationCap } from "lucide-react";
-import raushankumarImg from "@/assets/raushan-headshot.jpg";
+const raushankumarImg = "/placeholder.svg";
 import sathyanarayananImg from "@/assets/sathya-headshot.jpg";
 import vijethraiImg from "@/assets/vijeth-headshot.jpg";
 
