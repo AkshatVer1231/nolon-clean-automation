@@ -15,20 +15,19 @@ const Hero = () => {
           <div className="animate-fade-in-up text-white">
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium mb-8 border border-white/20">
               <span className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse"></span>
-              Leading Consultant Firm - Autonomous Solutions
+              nolon.ai
             </div>
             
             <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-8">
-              HIGH-QUALITY
+              PHYSICAL AI
               <br />
-              <span className="text-accent">MARKET</span>
+              <span className="text-accent">AGENT</span>
               <br />
-              EXPERIENCES
+              WORKFORCE
             </h1>
             
             <p className="text-xl text-white/90 mb-12 leading-relaxed max-w-2xl">
-              Provide solutions for reliable growth through autonomous AI systems that 
-              revolutionize commercial cleaning operations with precision and efficiency.
+              We are an AI Robotics company solving repetitive & mundane physical tasks, at scale, starting with the cleaning services market.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 mb-16">

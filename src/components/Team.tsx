@@ -121,9 +121,9 @@ const Team = () => {
           <div className="bg-gradient-primary rounded-xl p-8 text-white max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-white">Our Philosophy</h3>
             <blockquote className="text-lg italic mb-4 text-white/90">
-              "I want AI to do my laundry and dishes so that I can do art and writing. Not the other way around."
+              "I want AI to do my laundry and dishes so that I can do art and writing"
             </blockquote>
-            <p className="text-sm text-white/75">— Joanna Maciejewska, Author</p>
+            <p className="text-sm text-white/75">—Joanna Maciejewska</p>
             <p className="mt-6 text-white/90">
               We believe in giving physical form to AI and the freedom humanity deserves. 
               Our mission is to be the Physical AI engine layer between Hardware and real-world problems, at scale.
