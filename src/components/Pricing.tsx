@@ -69,25 +69,25 @@ const Pricing = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-2">Traditional Janitor</h3>
               <div className="text-4xl font-bold text-warning mb-2">$3,000</div>
-              <p className="text-muted">per month</p>
+              <p className="text-muted-foreground">per month</p>
             </div>
             
             <div className="space-y-4">
               <div className="flex items-center">
                 <X className="h-5 w-5 text-destructive mr-3" />
-                <span className="text-muted">Difficult to hire & retain</span>
+                <span className="text-muted-foreground">Difficult to hire & retain</span>
               </div>
               <div className="flex items-center">
                 <X className="h-5 w-5 text-destructive mr-3" />
-                <span className="text-muted">Limited to 9 hours daily</span>
+                <span className="text-muted-foreground">Limited to 9 hours daily</span>
               </div>
               <div className="flex items-center">
                 <X className="h-5 w-5 text-destructive mr-3" />
-                <span className="text-muted">Manual service tracking</span>
+                <span className="text-muted-foreground">Manual service tracking</span>
               </div>
               <div className="flex items-center">
                 <X className="h-5 w-5 text-destructive mr-3" />
-                <span className="text-muted">High churn & unpredictability</span>
+                <span className="text-muted-foreground">High churn & unpredictability</span>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Pricing = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-2">Nolon AI Robot</h3>
               <div className="text-4xl font-bold text-primary mb-2">$2,500</div>
-              <p className="text-muted">per month (RaaS)</p>
+              <p className="text-muted-foreground">per month (RaaS)</p>
             </div>
             
             <div className="space-y-4 mb-8">
@@ -146,10 +146,10 @@ const Pricing = () => {
                 {comparison.map((item, index) => (
                   <tr key={index} className="border-b border-border">
                     <td className="py-4 font-medium">{item.feature}</td>
-                    <td className={`text-center py-4 ${item.advantage === 'traditional' ? 'text-success font-medium' : 'text-muted'}`}>
+                    <td className={`text-center py-4 ${item.advantage === 'traditional' ? 'text-success font-medium' : 'text-muted-foreground'}`}>
                       {item.traditional}
                     </td>
-                    <td className={`text-center py-4 ${item.advantage === 'nolon' ? 'text-primary font-medium' : 'text-muted'}`}>
+                    <td className={`text-center py-4 ${item.advantage === 'nolon' ? 'text-primary font-medium' : 'text-muted-foreground'}`}>
                       {item.nolon}
                     </td>
                   </tr>
@@ -168,7 +168,7 @@ const Pricing = () => {
                 <div key={index} className="flex justify-between items-center p-4 bg-surface rounded-lg">
                   <div>
                     <div className="font-semibold">{projection.period}</div>
-                    <div className="text-sm text-muted">{projection.bots}</div>
+                    <div className="text-sm text-muted-foreground">{projection.bots}</div>
                   </div>
                   <div className="text-xl font-bold text-primary">{projection.revenue}</div>
                 </div>
