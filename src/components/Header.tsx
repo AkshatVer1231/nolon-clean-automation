@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-medium border-b border-border' 
           : 'bg-white/10 backdrop-blur-sm border-b border-white/20'
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
           {/* Professional Logo */}
           <div className="flex items-center">
-            <div className={`text-2xl font-bold hover-scale cursor-pointer ${isScrolled ? 'text-primary' : 'text-white'} transition-all duration-300`}>
+            <div className={`text-2xl font-bold hover-gentle cursor-pointer ${isScrolled ? 'text-primary' : 'text-white'} transition-all duration-500 ease-out hover:scale-110`}>
               <span className="font-light">Nolon</span>
               <span className="text-accent">AI</span>
             </div>
