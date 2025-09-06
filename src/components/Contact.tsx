@@ -108,15 +108,6 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-center">
-                <div className="p-3 rounded-lg bg-primary/10 mr-4">
-                  <Calendar className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <p className="font-semibold">MVP Launch</p>
-                  <p className="text-muted-foreground">August 2025</p>
-                </div>
-              </div>
             </div>
             
             {/* Customer Criteria */}
