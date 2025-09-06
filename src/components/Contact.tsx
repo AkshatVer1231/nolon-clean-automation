@@ -92,7 +92,7 @@ const Contact = () => {
               <span className="text-gradient-primary">Your Cleaning Operations?</span>
             </h2>
             
-            <p className="text-xl text-muted mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Join facility management companies who are preparing for the future of autonomous cleaning. 
               Request a demo to see Nolon AI robots in action.
             </p>
@@ -104,7 +104,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Email Us</p>
-                  <p className="text-muted">hello@nolon.ai</p>
+                  <p className="text-muted-foreground">hello@nolon.ai</p>
                 </div>
               </div>
               
@@ -114,7 +114,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">MVP Launch</p>
-                  <p className="text-muted">August 2025</p>
+                  <p className="text-muted-foreground">August 2025</p>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const Contact = () => {
             {/* Customer Criteria */}
             <div className="bg-surface p-6 rounded-lg border border-border">
               <h3 className="font-semibold mb-4">Ideal Customer Profile</h3>
-              <ul className="space-y-2 text-sm text-muted">
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Facility management companies with 100+ employees</li>
                 <li>• $10M+ yearly revenue</li>
                 <li>• Services offices, hospitals, convention centers</li>
