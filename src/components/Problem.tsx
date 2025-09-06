@@ -48,12 +48,12 @@ const Problem = () => {
                   <problem.icon className="h-6 w-6 text-destructive" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold">{problem.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground">{problem.title}</h3>
                   <p className="text-sm text-accent font-medium">{problem.stats}</p>
                 </div>
               </div>
               
-              <p className="text-muted leading-relaxed">{problem.description}</p>
+              <p className="text-muted-foreground leading-relaxed">{problem.description}</p>
             </div>
           ))}
         </div>
@@ -64,15 +64,15 @@ const Problem = () => {
             <h3 className="text-2xl font-bold mb-6">Market Impact</h3>
             <div className="space-y-4">
               <div className="flex justify-between items-center p-4 bg-background rounded-lg border border-border">
-                <span className="font-medium">US Cleaning Services Market</span>
+                <span className="font-medium text-foreground">US Cleaning Services Market</span>
                 <span className="text-2xl font-bold text-primary">$83B</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-background rounded-lg border border-border">
-                <span className="font-medium">Target Market (CA, NY, TX)</span>
+                <span className="font-medium text-foreground">Target Market (CA, NY, TX)</span>
                 <span className="text-2xl font-bold text-primary">$2.01B</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-background rounded-lg border border-border">
-                <span className="font-medium">Traditional Janitor Cost</span>
+                <span className="font-medium text-foreground">Traditional Janitor Cost</span>
                 <span className="text-2xl font-bold text-warning">$3,000/mo</span>
               </div>
             </div>

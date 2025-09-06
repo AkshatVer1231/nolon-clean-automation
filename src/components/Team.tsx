@@ -61,15 +61,15 @@ const Team = () => {
                 </div>
               </div>
               
-              <h3 className="text-xl font-bold mb-2">{founder.name}</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{founder.name}</h3>
               <p className="text-primary font-medium mb-4">{founder.role}</p>
               <p className="text-sm text-accent font-medium mb-4">{founder.expertise}</p>
               
-              <div className="space-y-2 text-sm text-muted">
+              <div className="space-y-2 text-sm text-muted-foreground">
                 {founder.achievements.map((achievement, i) => (
                   <div key={i} className="flex items-start">
                     <Award className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>{achievement}</span>
+                    <span className="text-muted-foreground">{achievement}</span>
                   </div>
                 ))}
               </div>
@@ -90,11 +90,11 @@ const Team = () => {
                 <div className="flex items-start mb-3">
                   <GraduationCap className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">{advisor.name}</h4>
+                    <h4 className="font-semibold text-foreground">{advisor.name}</h4>
                     <p className="text-sm text-primary">{advisor.title}</p>
                   </div>
                 </div>
-                <p className="text-sm text-muted">{advisor.background}</p>
+                <p className="text-sm text-muted-foreground">{advisor.background}</p>
               </div>
             ))}
           </div>
