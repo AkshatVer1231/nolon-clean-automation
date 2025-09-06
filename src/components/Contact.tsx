@@ -238,6 +238,24 @@ const Contact = () => {
             Early access available for qualifying partners.
           </p>
         </div>
+
+        {/* Quote Section */}
+        <div className="mt-16 text-center">
+          <blockquote className="text-xl italic mb-6 text-foreground max-w-4xl mx-auto">
+            "The next wave of AI will be Physical AI. Everything that moves will be robotic someday, and it will be soon" - Jensen Huang
+          </blockquote>
+          
+          <div className="bg-gradient-primary rounded-xl p-8 text-white max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4 text-white">
+              <a href="mailto:hello@nolon.ai" className="text-white hover:text-white/90 transition-colors">
+                Join us
+              </a>
+            </h3>
+            <p className="text-lg text-white/90">
+              We are building the future of Embodied AI agents. Come join us in this exciting journey.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
