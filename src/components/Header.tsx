@@ -54,7 +54,10 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button className="btn-primary">
+            <Button 
+              className="btn-primary"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Request Demo
             </Button>
           </div>
@@ -86,7 +89,13 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <Button className="btn-primary w-full mt-4">
+              <Button 
+                className="btn-primary w-full mt-4"
+                onClick={() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  setIsOpen(false);
+                }}
+              >
                 Request Demo
               </Button>
             </div>
