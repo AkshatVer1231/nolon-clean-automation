@@ -6,52 +6,52 @@
 
 @layer base {
   :root {
-    /* Mobbin-Inspired Brand Colors */
-    --primary: 239 84% 67%; /* #6366F1 - Primary Purple */
+    /* Professional Business Colors - Inspired by Charles Template */
+    --primary: 221 83% 20%; /* #1e3a8a - Deep Professional Blue */
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 243 75% 59%; /* #4338CA - Deep Purple */
-    --primary-light: 232 97% 85%; /* #A5B4FC - Light Purple */
+    --primary-dark: 221 83% 15%; /* #153070 - Darker Blue */
+    --primary-light: 221 83% 35%; /* #2563eb - Lighter Blue */
     
     /* Sophisticated Neutrals */
     --background: 0 0% 100%; /* #FFFFFF - White */
-    --foreground: 217 33% 17%; /* #111827 - Primary Text */
+    --foreground: 222 84% 15%; /* #1f2937 - Professional Dark */
     --surface: 0 0% 100%; /* #FFFFFF - White */
-    --surface-elevated: 220 14% 96%; /* #F3F4F6 - Light Gray */
+    --surface-elevated: 210 40% 98%; /* #f8fafc - Very Light Gray */
     
     /* Semantic Colors */
-    --muted: 220 14% 96%; /* #F3F4F6 - Light Gray */
-    --muted-foreground: 220 13% 46%; /* #6B7280 - Secondary Gray */
-    --accent: 239 84% 67%; /* #6366F1 - Primary Purple for accents */
+    --muted: 210 40% 96%; /* #f1f5f9 - Light Gray */
+    --muted-foreground: 215 16% 47%; /* #64748b - Professional Gray */
+    --accent: 37 91% 55%; /* #f59e0b - Professional Gold Accent */
     --accent-foreground: 0 0% 100%;
     
     /* Status Colors */
-    --success: 160 84% 39%; /* #10B981 - Success Green */
-    --warning: 43 96% 56%; /* #F59E0B - Warning Orange */
-    --destructive: 0 84% 60%; /* #EF4444 - Error Red */
+    --success: 142 76% 36%; /* #059669 - Success Green */
+    --warning: 43 96% 56%; /* #f59e0b - Warning Orange */
+    --destructive: 0 84% 60%; /* #dc2626 - Error Red */
     --destructive-foreground: 0 0% 100%;
     
     /* UI Elements */
-    --border: 220 13% 82%; /* #D1D5DB - Border Gray */
-    --input: 220 13% 91%; /* Input Background */
-    --ring: 239 84% 67%; /* Primary Purple for focus rings */
+    --border: 214 32% 91%; /* #e2e8f0 - Border Gray */
+    --input: 214 32% 91%; /* Input Background */
+    --ring: 221 83% 20%; /* Primary Blue for focus rings */
     --card: 0 0% 100%;
-    --card-foreground: 217 33% 17%;
+    --card-foreground: 222 84% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 217 33% 17%;
-    --secondary: 220 14% 96%; /* #F3F4F6 - Light Gray */
-    --secondary-foreground: 217 33% 17%;
+    --popover-foreground: 222 84% 15%;
+    --secondary: 210 40% 96%; /* #f1f5f9 - Light Gray */
+    --secondary-foreground: 222 84% 15%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(239 84% 67%) 0%, hsl(232 97% 85%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(243 75% 59%) 0%, hsl(239 84% 67%) 50%, hsl(232 97% 85%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 96%) 100%);
-    --gradient-surface: linear-gradient(135deg, hsl(220 14% 96%) 0%, hsl(0 0% 100%) 100%);
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 20%) 0%, hsl(221 83% 35%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(221 83% 15%) 0%, hsl(221 83% 20%) 50%, hsl(221 83% 35%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-surface: linear-gradient(135deg, hsl(210 40% 96%) 0%, hsl(0 0% 100%) 100%);
     
-    /* Shadows */
-    --shadow-soft: 0 2px 8px hsl(217 33% 17% / 0.08);
-    --shadow-medium: 0 4px 16px hsl(217 33% 17% / 0.12);
-    --shadow-strong: 0 8px 32px hsl(217 33% 17% / 0.16);
-    --shadow-brand: 0 8px 25px hsl(239 84% 67% / 0.15);
+    /* Professional Shadows */
+    --shadow-soft: 0 2px 8px hsl(222 84% 15% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(222 84% 15% / 0.12);
+    --shadow-strong: 0 8px 32px hsl(222 84% 15% / 0.16);
+    --shadow-brand: 0 8px 25px hsl(221 83% 20% / 0.15);
     
     /* Animation */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -159,7 +159,7 @@
   
   /* Text Gradients */
   .text-gradient-primary {
-    @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
   }
   
   /* Section Patterns */

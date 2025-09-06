@@ -4,83 +4,88 @@ import heroRobot from "@/assets/hero-robot.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-subtle overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.primary/5),transparent)]" />
+    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
+      {/* Professional Background Overlay */}
+      <div className="absolute inset-0 bg-primary/95" />
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1))]" />
       
-      <div className="container-custom relative">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
-          {/* Content */}
-          <div className="animate-fade-in-up">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
-              Stealth Mode - August 2025 MVP Launch
+      <div className="container-custom relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center min-h-screen py-20">
+          {/* Professional Content */}
+          <div className="animate-fade-in-up text-white">
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium mb-8 border border-white/20">
+              <span className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse"></span>
+              Leading Consultant Firm - Autonomous Solutions
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              We{" "}
-              <span className="text-gradient-primary">CLEAN</span>
+            <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-8">
+              HIGH-QUALITY
               <br />
-              so you can{" "}
-              <span className="text-gradient-primary">DREAM</span>
+              <span className="text-accent">MARKET</span>
+              <br />
+              EXPERIENCES
             </h1>
             
-            <p className="text-xl text-muted mb-8 leading-relaxed max-w-lg">
-              Autonomous AI robots for commercial cleaning services. 
-              Give your human workforce the freedom to focus on creative and meaningful work.
+            <p className="text-xl text-white/90 mb-12 leading-relaxed max-w-2xl">
+              Provide solutions for reliable growth through autonomous AI systems that 
+              revolutionize commercial cleaning operations with precision and efficiency.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button className="btn-primary group">
-                Request Demo
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <div className="flex flex-col sm:flex-row gap-6 mb-16">
+              <Button 
+                className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-2xl"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                GET FREE QUOTES
               </Button>
               
-              <Button className="btn-secondary group">
-                <Play className="mr-2 h-4 w-4" />
-                Watch Demo
+              <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                ABOUT US
               </Button>
             </div>
             
-            {/* Key Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
+            {/* Professional Stats */}
+            <div className="grid grid-cols-3 gap-12 pt-12 border-t border-white/20">
               <div>
-                <div className="text-2xl font-bold text-primary">$445B</div>
-                <div className="text-sm text-muted">Global Cleaning Market</div>
+                <div className="text-4xl font-bold text-accent mb-2">$445B</div>
+                <div className="text-white/80 font-medium">Global Market</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">24/7</div>
-                <div className="text-sm text-muted">Operation Capability</div>
+                <div className="text-4xl font-bold text-accent mb-2">24/7</div>
+                <div className="text-white/80 font-medium">Operations</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">$2.5K</div>
-                <div className="text-sm text-muted">Monthly Cost vs $3K</div>
+                <div className="text-4xl font-bold text-accent mb-2">100%</div>
+                <div className="text-white/80 font-medium">Reliability</div>
               </div>
             </div>
           </div>
           
-          {/* Hero Image */}
+          {/* Professional Hero Image */}
           <div className="relative animate-slide-in-right">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong hover-lift">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src={heroRobot} 
-                alt="Nolon AI autonomous cleaning robot in commercial washroom"
-                className="w-full h-auto object-cover"
+                alt="Professional autonomous cleaning solution in commercial environment"
+                className="w-full h-[600px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
+              
+              {/* Professional Overlay Card */}
+              <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-2xl">
+                <h3 className="text-lg font-bold text-primary mb-2">
+                  Provide solutions for the reliable growth
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune.
+                </p>
+              </div>
             </div>
             
-            {/* Floating Elements */}
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float" />
-            <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+            {/* Professional Floating Elements */}
+            <div className="absolute -top-8 -left-8 w-32 h-32 bg-accent/20 rounded-full blur-3xl animate-float" />
+            <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }} />
           </div>
-        </div>
-      </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-muted rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-muted rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>
