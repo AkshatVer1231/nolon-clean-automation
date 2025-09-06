@@ -1,29 +1,28 @@
 import { Award, MapPin, GraduationCap } from "lucide-react";
-import teamPhoto from "@/assets/team-photo.png";
+import raushankumarImg from "@/assets/raushan-headshot.jpg";
+import sathyanarayananImg from "@/assets/sathya-headshot.jpg";
+import vijethraiImg from "@/assets/vijeth-headshot.jpg";
 
 const Team = () => {
   const founders = [
     {
       name: "Raushan Kumar",
       role: "Co-founder",
-      image: teamPhoto,
-      objectPosition: "20% 50%",
+      image: raushankumarImg,
       achievements: ["Forbes 30 under 30 (2018)", "Global operations across 10+ countries", "12+ years Engineering & Business"],
       expertise: "Business & Supply Chain"
     },
     {
       name: "Sathya Narayanan R",
       role: "Co-founder", 
-      image: teamPhoto,
-      objectPosition: "50% 50%",
+      image: sathyanarayananImg,
       achievements: ["MS & PhD in Robotics from US", "17 years robotics experience", "IIIT Alumni"],
       expertise: "Robotics Navigation & Training"
     },
     {
       name: "Vijeth Rai",
       role: "Co-founder",
-      image: teamPhoto,
-      objectPosition: "82% 50%",
+      image: vijethraiImg,
       achievements: ["Samsung cleaning robot developer", "150+ robots developed & deployed", "IIIT Alumni"],
       expertise: "Arms, Vision & Perception"
     }
@@ -64,7 +63,6 @@ const Team = () => {
                   src={founder.image}
                   alt={founder.name}
                   className="w-full h-full rounded-full object-cover"
-                  style={{ objectPosition: founder.objectPosition }}
                   onError={(e) => {
                     const target = e.currentTarget as HTMLImageElement;
                     target.style.display = 'none';
