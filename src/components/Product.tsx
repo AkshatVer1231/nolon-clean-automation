@@ -55,16 +55,16 @@ const Product = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="card-feature hover-lift animate-fade-in-up card-hover group"
+              className="card-feature hover-lift animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4">
-                <div className="p-3 rounded-lg bg-primary/10 mb-3 sm:mb-0 group-hover:bg-primary/20 transition-all duration-500 hover:scale-110 hover:rotate-3">
-                  <feature.icon className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-110" />
+                <div className="p-3 rounded-lg bg-primary/10 mb-3 sm:mb-0">
+                  <feature.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-base lg:text-lg font-semibold sm:ml-3 text-foreground group-hover:text-primary transition-colors duration-300">{feature.title}</h3>
+                <h3 className="text-base lg:text-lg font-semibold sm:ml-3 text-foreground">{feature.title}</h3>
               </div>
-              <p className="text-muted-foreground text-sm lg:text-base group-hover:text-foreground transition-colors duration-300">{feature.description}</p>
+              <p className="text-muted-foreground text-sm lg:text-base">{feature.description}</p>
             </div>
           ))}
         </div>

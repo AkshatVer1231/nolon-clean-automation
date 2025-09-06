@@ -40,20 +40,20 @@ const Problem = () => {
           {problems.map((problem, index) => (
             <div 
               key={index} 
-              className="card-feature group animate-fade-in-up card-hover"
+              className="card-feature group animate-fade-in-up"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6">
-                <div className="p-3 rounded-lg bg-destructive/10 group-hover:bg-destructive/20 transition-all duration-500 mb-3 sm:mb-0 hover:scale-110 hover:rotate-3">
-                  <problem.icon className="h-6 w-6 text-destructive transition-transform duration-300 group-hover:scale-110" />
+                <div className="p-3 rounded-lg bg-destructive/10 group-hover:bg-destructive/20 transition-colors duration-300 mb-3 sm:mb-0">
+                  <problem.icon className="h-6 w-6 text-destructive" />
                 </div>
                 <div className="sm:ml-4">
-                  <h3 className="text-lg sm:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300">{problem.title}</h3>
-                  <p className="text-sm text-accent font-medium group-hover:text-primary transition-colors duration-300">{problem.stats}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-foreground">{problem.title}</h3>
+                  <p className="text-sm text-accent font-medium">{problem.stats}</p>
                 </div>
               </div>
               
-              <p className="text-muted-foreground leading-relaxed text-sm sm:text-base group-hover:text-foreground transition-colors duration-300">{problem.description}</p>
+              <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{problem.description}</p>
             </div>
           ))}
         </div>
