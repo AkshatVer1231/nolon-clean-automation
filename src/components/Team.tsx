@@ -6,25 +6,25 @@ import vijethraiImg from "@/assets/vijeth-headshot.jpg";
 const Team = () => {
   const founders = [
     {
-      name: "Raushan Kumar",
-      role: "Co-founder",
-      image: raushankumarImg,
-      achievements: ["Forbes 30 under 30 (2018)", "Global operations across 10+ countries", "12+ years Engineering & Business"],
-      expertise: "Business & Supply Chain"
+      name: "Sathya Narayanan",
+      role: "CEO",
+      image: sathyanarayananImg,
+      achievements: ["Global Supply Chain expert", "17 years robotics experience", "IIIT Alumni"],
+      expertise: "Global Supply Chain"
     },
     {
-      name: "Sathya Narayanan R",
-      role: "Co-founder", 
-      image: sathyanarayananImg,
-      achievements: ["MS & PhD in Robotics from US", "17 years robotics experience", "IIIT Alumni"],
-      expertise: "Robotics Navigation & Training"
+      name: "Raushan Kumar",
+      role: "CTO", 
+      image: raushankumarImg,
+      achievements: ["Deployed 150+ robots", "ex-Samsung", "Alumni IIIT"],
+      expertise: "Robotics Development"
     },
     {
       name: "Vijeth Rai",
-      role: "Co-founder",
+      role: "CRO",
       image: vijethraiImg,
-      achievements: ["Samsung cleaning robot developer", "150+ robots developed & deployed", "IIIT Alumni"],
-      expertise: "Arms, Vision & Perception"
+      achievements: ["MS & PhD in Robotics", "Vision expert", "Robotic arms expert"],
+      expertise: "Vision & Robotic Arms"
     }
   ];
 
