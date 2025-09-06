@@ -9,21 +9,21 @@ const Team = () => {
       name: "Sathya Narayanan",
       role: "CEO",
       image: sathyanarayananImg,
-      achievements: ["Global Supply Chain expert", "17 years robotics experience", "IIIT Alumni"],
+      achievements: ["Global Supply Chain expert"],
       expertise: "Global Supply Chain"
     },
     {
       name: "Raushan Kumar",
       role: "CTO", 
       image: raushankumarImg,
-      achievements: ["Deployed 150+ robots", "ex-Samsung", "Alumni IIIT"],
+      achievements: ["Deployed 150+ robots", "ex-Samsung, Alumni IIIT"],
       expertise: "Robotics Development"
     },
     {
       name: "Vijeth Rai",
       role: "CRO",
       image: vijethraiImg,
-      achievements: ["MS & PhD in Robotics", "Vision expert", "Robotic arms expert"],
+      achievements: ["MS & PhD in Robotics", "Vision, Robotic arms expert"],
       expertise: "Vision & Robotic Arms"
     }
   ];
