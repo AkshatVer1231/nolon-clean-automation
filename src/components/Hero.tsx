@@ -1,8 +1,11 @@
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import heroRobot from "@/assets/hero-robot.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
       {/* Professional Background Overlay */}
@@ -34,7 +37,10 @@ const Hero = () => {
                 GET FREE QUOTES
               </Button>
               
-              <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                onClick={() => navigate('/about')}
+              >
                 ABOUT US
               </Button>
             </div>
