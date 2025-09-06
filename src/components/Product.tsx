@@ -70,7 +70,7 @@ const Product = () => {
             Autonomous AI Robots for{" "}
             <span className="text-gradient-primary">Commercial Cleaning</span>
           </h2>
-          <p className="text-xl text-muted max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             End-to-end washroom cleaning with AI-driven autonomy. 
             Specialized for commercial spaces including offices, hospitals, and factories.
           </p>

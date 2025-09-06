@@ -44,7 +44,7 @@ const Team = () => {
             World-Class{" "}
             <span className="text-gradient-primary">Founding Team</span>
           </h2>
-          <p className="text-xl text-muted max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Three co-founders with complementary expertise in robotics, business operations, 
             and AI systems, backed by industry-leading advisors.
           </p>

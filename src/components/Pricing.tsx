@@ -56,7 +56,7 @@ const Pricing = () => {
             <span className="text-gradient-primary">Robot as a Service</span>
             {" "}Pricing Model
           </h2>
-          <p className="text-xl text-muted max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Predictable costs, superior performance, and 24/7 reliability. 
             See how Nolon AI robots compare to traditional janitorial services.
           </p>

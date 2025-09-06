@@ -30,7 +30,7 @@ const Problem = () => {
             The Cleaning Industry's{" "}
             <span className="text-gradient-primary">Critical Challenges</span>
           </h2>
-          <p className="text-xl text-muted max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Three fundamental problems are disrupting the $445 billion global cleaning industry,
             creating an urgent need for autonomous solutions.
           </p>
