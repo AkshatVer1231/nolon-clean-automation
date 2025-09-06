@@ -223,10 +223,10 @@ const Contact = () => {
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="btn-primary w-full group text-sm lg:text-base"
+                className="btn-primary w-full group text-sm lg:text-base btn-hover-slide hover:scale-105 hover:-translate-y-1 transition-all duration-500"
               >
                 {isSubmitting ? "Submitting..." : "Request Demo Access"}
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform duration-300" />
               </Button>
             </form>
           </div>

@@ -123,7 +123,7 @@ const Pricing = () => {
               </div>
             </div>
             
-            <Button className="btn-primary w-full text-sm lg:text-base">
+            <Button className="btn-primary w-full text-sm lg:text-base btn-hover-slide hover:scale-105 hover:-translate-y-1 transition-all duration-300">
               Get Started
             </Button>
           </div>
