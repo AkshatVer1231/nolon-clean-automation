@@ -1,6 +1,6 @@
 import { Award, MapPin, GraduationCap } from "lucide-react";
 import raushankumarImg from "@/assets/raushan-headshot.jpg";
-import sathyanarayananImg from "@/assets/sathya-headshot.jpg";
+import sathyanarayananImg from "@/assets/sathya-headshot-2025.jpg";
 import vijethraiImg from "@/assets/vijeth-headshot.jpg";
 
 const Team = () => {
