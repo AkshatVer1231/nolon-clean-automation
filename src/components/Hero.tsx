@@ -2,7 +2,33 @@ import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroRobot from "@/assets/hero-robot.jpg";
 
-const Hero = () => {
+interface HeroProps {
+  title?: {
+    line1: string;
+    line2: string;
+    line3: string;
+  };
+  description?: string;
+  stats?: {
+    market: string;
+    operations: string;
+    reliability: string;
+  };
+}
+
+const Hero = ({ 
+  title = {
+    line1: "PHYSICAL AI",
+    line2: "AGENT", 
+    line3: "WORKFORCE"
+  },
+  description = "We are an AI Robotics company solving repetitive & mundane physical tasks, at scale, starting with the cleaning services market.",
+  stats = {
+    market: "$445B",
+    operations: "24/7",
+    reliability: "100%"
+  }
+}: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
       {/* Professional Background Overlay */}
@@ -15,15 +41,15 @@ const Hero = () => {
           <div className="animate-fade-in-up text-white">
             
             <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-8">
-              PHYSICAL AI
+              {title.line1}
               <br />
-              <span className="text-accent">AGENT</span>
+              <span className="text-accent">{title.line2}</span>
               <br />
-              WORKFORCE
+              {title.line3}
             </h1>
             
             <p className="text-xl text-white/90 mb-12 leading-relaxed max-w-2xl">
-              We are an AI Robotics company solving repetitive & mundane physical tasks, at scale, starting with the cleaning services market.
+              {description}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 mb-16">
@@ -42,15 +68,15 @@ const Hero = () => {
             {/* Professional Stats */}
             <div className="grid grid-cols-3 gap-12 pt-12 border-t border-white/20">
               <div>
-                <div className="text-4xl font-bold text-accent mb-2">$445B</div>
+                <div className="text-4xl font-bold text-accent mb-2">{stats.market}</div>
                 <div className="text-white/80 font-medium">Global Market</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-accent mb-2">24/7</div>
+                <div className="text-4xl font-bold text-accent mb-2">{stats.operations}</div>
                 <div className="text-white/80 font-medium">Operations</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-accent mb-2">100%</div>
+                <div className="text-4xl font-bold text-accent mb-2">{stats.reliability}</div>
                 <div className="text-white/80 font-medium">Reliability</div>
               </div>
             </div>
