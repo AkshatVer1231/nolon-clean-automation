@@ -65,16 +65,6 @@ const Hero = () => {
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
-              
-              {/* Professional Overlay Card */}
-              <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-2xl">
-                <h3 className="text-lg font-bold text-primary mb-2">
-                  Provide solutions for the reliable growth
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune.
-                </p>
-              </div>
             </div>
             
             {/* Professional Floating Elements */}
