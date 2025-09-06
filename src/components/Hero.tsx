@@ -34,7 +34,10 @@ const Hero = () => {
                 GET FREE QUOTES
               </Button>
               
-              <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 ABOUT US
               </Button>
             </div>
