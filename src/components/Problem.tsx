@@ -40,7 +40,7 @@ const Problem = () => {
           {problems.map((problem, index) => (
             <div 
               key={index} 
-              className="card-feature group animate-fade-in-up"
+              className="card-feature group animate-fade-in-up hover-scale hover-shadow hover-smooth"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6">

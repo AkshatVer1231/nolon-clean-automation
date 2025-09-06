@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
           {/* Professional Logo */}
           <div className="flex items-center">
-            <div className={`text-2xl font-bold ${isScrolled ? 'text-primary' : 'text-white'} transition-colors duration-300`}>
+            <div className={`text-2xl font-bold hover-scale cursor-pointer ${isScrolled ? 'text-primary' : 'text-white'} transition-all duration-300`}>
               <span className="font-light">Nolon</span>
               <span className="text-accent">AI</span>
             </div>
@@ -45,7 +45,7 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`font-medium transition-colors duration-200 ${
+                className={`font-medium hover-smooth hover:scale-105 ${
                   isScrolled 
                     ? 'text-muted-foreground hover:text-primary' 
                     : 'text-white/90 hover:text-white'
@@ -59,7 +59,7 @@ const Header = () => {
           {/* Professional CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <Button 
-              className={`font-semibold px-6 py-2 rounded-lg transition-all duration-300 ${
+              className={`font-semibold px-6 py-2 rounded-lg hover-scale transition-all duration-300 ${
                 isScrolled 
                   ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-brand' 
                   : 'bg-white text-primary hover:bg-white/90 hover:shadow-2xl'

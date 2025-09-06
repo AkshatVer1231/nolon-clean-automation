@@ -65,7 +65,7 @@ const Pricing = () => {
         {/* Cost Comparison */}
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-20">
           {/* Traditional Janitor */}
-          <div className="card-elevated p-6 lg:p-8">
+          <div className="card-elevated p-6 lg:p-8 hover-smooth hover:shadow-strong">
             <div className="text-center mb-6 lg:mb-8">
               <h3 className="text-xl lg:text-2xl font-bold mb-2">Traditional Janitor</h3>
               <div className="text-3xl lg:text-4xl font-bold text-warning mb-2">$3,000</div>
@@ -93,7 +93,7 @@ const Pricing = () => {
           </div>
 
           {/* Nolon AI Robot */}
-          <div className="card-elevated p-6 lg:p-8 border-2 border-primary relative">
+          <div className="card-elevated p-6 lg:p-8 border-2 border-primary relative hover-smooth hover:shadow-strong hover-scale">
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 lg:px-4 py-1 rounded-full text-xs lg:text-sm font-medium">
               Recommended
             </div>
@@ -123,7 +123,7 @@ const Pricing = () => {
               </div>
             </div>
             
-            <Button className="btn-primary w-full text-sm lg:text-base">
+            <Button className="btn-primary w-full text-sm lg:text-base hover-scale">
               Get Started
             </Button>
           </div>

@@ -110,7 +110,7 @@ const Contact = () => {
             </div>
             
             {/* Customer Criteria */}
-            <div className="bg-surface p-4 lg:p-6 rounded-lg border border-border">
+            <div className="bg-surface p-4 lg:p-6 rounded-lg border border-border hover-smooth hover:shadow-soft">
               <h3 className="font-semibold mb-3 lg:mb-4 text-center lg:text-left">Ideal Customer Profile</h3>
               <ul className="space-y-1 lg:space-y-2 text-xs lg:text-sm text-muted-foreground">
                 <li>• Facility management companies with 100+ employees</li>
@@ -123,7 +123,7 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <div className="card-elevated p-6 lg:p-8 order-1 lg:order-2">
+          <div className="card-elevated p-6 lg:p-8 order-1 lg:order-2 hover-smooth hover:shadow-strong">
             <h3 className="text-xl lg:text-2xl font-bold mb-4 lg:mb-6 text-center lg:text-left">Request Demo Access</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-6">
@@ -223,7 +223,7 @@ const Contact = () => {
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="btn-primary w-full group text-sm lg:text-base"
+                className="btn-primary w-full group text-sm lg:text-base hover-scale"
               >
                 {isSubmitting ? "Submitting..." : "Request Demo Access"}
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

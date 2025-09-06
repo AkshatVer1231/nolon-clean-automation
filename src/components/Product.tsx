@@ -55,7 +55,7 @@ const Product = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="card-feature hover-lift animate-fade-in-up"
+              className="card-feature hover-lift hover-scale hover-shadow hover-smooth animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4">

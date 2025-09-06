@@ -28,14 +28,14 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mb-8 lg:mb-16 justify-center lg:justify-start">
               <Button 
-                className="bg-white text-primary hover:bg-white/90 px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-2xl w-full sm:w-auto"
+                className="bg-white text-primary hover:bg-white/90 hover-scale px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-2xl w-full sm:w-auto"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 GET FREE QUOTES
               </Button>
               
               <Button 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg font-semibold rounded-lg transition-all duration-300 w-full sm:w-auto"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary hover-scale px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg font-semibold rounded-lg transition-all duration-300 w-full sm:w-auto"
                 onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 ABOUT US
@@ -61,11 +61,11 @@ const Hero = () => {
           
           {/* Professional Hero Image */}
           <div className="relative animate-slide-in-right order-1 lg:order-2 px-4 lg:px-0">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl hover-scale hover-shadow transition-all duration-500">
               <img 
                 src={heroRobot} 
                 alt="Professional autonomous cleaning solution in commercial environment"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover hover-smooth hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
             </div>

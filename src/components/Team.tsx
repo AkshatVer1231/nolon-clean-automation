@@ -91,7 +91,7 @@ const Team = () => {
           {founders.map((founder, index) => (
             <div 
               key={index}
-              className="card-elevated p-6 lg:p-8 text-center hover-lift animate-fade-in-up transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 group"
+              className="card-elevated p-6 lg:p-8 text-center hover-lift hover-scale hover-shadow hover-smooth animate-fade-in-up group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="w-20 lg:w-24 h-20 lg:h-24 mx-auto mb-4 lg:mb-6 rounded-full bg-gradient-primary p-1 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
@@ -135,7 +135,7 @@ const Team = () => {
             {advisors.map((advisor, index) => (
               <div 
                 key={index}
-                className="p-4 lg:p-6 rounded-lg border border-border hover:shadow-soft transition-all duration-300 hover:-translate-y-1"
+                className="p-4 lg:p-6 rounded-lg border border-border hover-shadow hover-smooth hover:scale-105"
               >
                 <div className="flex items-start mb-2 lg:mb-3">
                   <GraduationCap className="h-4 lg:h-5 w-4 lg:w-5 text-primary mt-1 mr-3 flex-shrink-0" />
