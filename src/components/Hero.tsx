@@ -13,10 +13,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center min-h-screen py-20">
           {/* Professional Content */}
           <div className="animate-fade-in-up text-white">
-            <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium mb-8 border border-white/20">
-              <span className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse"></span>
-              nolon.ai
-            </div>
             
             <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-8">
               PHYSICAL AI
