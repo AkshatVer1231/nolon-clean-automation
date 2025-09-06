@@ -117,9 +117,9 @@ const Team = () => {
               
               <div className="space-y-2 text-sm text-muted-foreground">
                 {founder.achievements.map((achievement, i) => (
-                  <div key={i} className="flex items-start">
+                  <div key={i} className="flex items-center justify-center">
                     <Award className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span className="text-muted-foreground">{achievement}</span>
+                    <span className="text-muted-foreground text-center">{achievement}</span>
                   </div>
                 ))}
               </div>
