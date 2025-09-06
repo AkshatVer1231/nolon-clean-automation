@@ -39,17 +39,6 @@ const Team = () => {
   return (
     <section id="team" className="section-padding bg-surface">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6">
-            World-Class{" "}
-            <span className="text-gradient-primary">Founding Team</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Three co-founders with complementary expertise in robotics, business operations, 
-            and AI systems, backed by industry-leading advisors.
-          </p>
-        </div>
-
         {/* Vision Statement */}
         <div className="mb-16">
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-primary/90 to-accent p-12 text-center">
