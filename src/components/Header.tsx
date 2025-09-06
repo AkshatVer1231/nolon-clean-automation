@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-medium border-b border-border' 
           : 'bg-white/10 backdrop-blur-sm border-b border-white/20'
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
           {/* Professional Logo */}
           <div className="flex items-center">
-            <div className={`text-2xl font-bold hover-gentle cursor-pointer ${isScrolled ? 'text-primary' : 'text-white'} transition-all duration-500 ease-out hover:scale-110`}>
+            <div className={`text-2xl font-bold ${isScrolled ? 'text-primary' : 'text-white'} transition-colors duration-300`}>
               <span className="font-light">Nolon</span>
               <span className="text-accent">AI</span>
             </div>
@@ -45,7 +45,7 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`font-medium hover-smooth hover:scale-105 ${
+                className={`font-medium transition-colors duration-200 ${
                   isScrolled 
                     ? 'text-muted-foreground hover:text-primary' 
                     : 'text-white/90 hover:text-white'
@@ -59,7 +59,7 @@ const Header = () => {
           {/* Professional CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <Button 
-              className={`font-semibold px-6 py-2 rounded-lg hover-scale transition-all duration-300 ${
+              className={`font-semibold px-6 py-2 rounded-lg transition-all duration-300 ${
                 isScrolled 
                   ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-brand' 
                   : 'bg-white text-primary hover:bg-white/90 hover:shadow-2xl'
