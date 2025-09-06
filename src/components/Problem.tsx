@@ -79,11 +79,11 @@ const Problem = () => {
           </div>
           
           <div className="bg-gradient-primary rounded-xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Why Physical AI Now?</h3>
-            <p className="mb-6 opacity-90">
+            <h3 className="text-2xl font-bold mb-4 text-white">Why Physical AI Now?</h3>
+            <p className="mb-6 text-white/90">
               Six technological advances have created the perfect inflection point for robotics adoption.
             </p>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-2 gap-4 text-sm text-white/95">
               <div>• Advanced ML & Neural Networks</div>
               <div>• Transformer Architecture</div>
               <div>• Accessible Cloud Computing</div>

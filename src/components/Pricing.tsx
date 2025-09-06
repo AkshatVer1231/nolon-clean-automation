@@ -107,19 +107,19 @@ const Pricing = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center">
                 <Check className="h-5 w-5 text-success mr-3" />
-                <span>Easy deployment & setup</span>
+                <span className="text-foreground">Easy deployment & setup</span>
               </div>
               <div className="flex items-center">
                 <Check className="h-5 w-5 text-success mr-3" />
-                <span>24/7 autonomous operation</span>
+                <span className="text-foreground">24/7 autonomous operation</span>
               </div>
               <div className="flex items-center">
                 <Check className="h-5 w-5 text-success mr-3" />
-                <span>Automated tracking & reports</span>
+                <span className="text-foreground">Automated tracking & reports</span>
               </div>
               <div className="flex items-center">
                 <Check className="h-5 w-5 text-success mr-3" />
-                <span>100% predictable service</span>
+                <span className="text-foreground">100% predictable service</span>
               </div>
             </div>
             
@@ -177,23 +177,23 @@ const Pricing = () => {
           </div>
           
           <div className="bg-gradient-primary rounded-xl p-8 text-white">
-            <Zap className="h-8 w-8 mb-4" />
-            <h3 className="text-2xl font-bold mb-4">Market Potential</h3>
+            <Zap className="h-8 w-8 mb-4 text-white" />
+            <h3 className="text-2xl font-bold mb-4 text-white">Market Potential</h3>
             <div className="space-y-4 text-sm">
               <div className="flex justify-between">
-                <span className="opacity-90">US Restrooms (est.)</span>
-                <span className="font-bold">25-40 million</span>
+                <span className="text-white/90">US Restrooms (est.)</span>
+                <span className="font-bold text-white">25-40 million</span>
               </div>
               <div className="flex justify-between">
-                <span className="opacity-90">Deployment Potential</span>
-                <span className="font-bold">1 million robots</span>
+                <span className="text-white/90">Deployment Potential</span>
+                <span className="font-bold text-white">1 million robots</span>
               </div>
               <div className="flex justify-between">
-                <span className="opacity-90">Paid Pilots Start</span>
-                <span className="font-bold">2027</span>
+                <span className="text-white/90">Paid Pilots Start</span>
+                <span className="font-bold text-white">2027</span>
               </div>
             </div>
-            <p className="mt-6 text-sm opacity-90">
+            <p className="mt-6 text-sm text-white/90">
               Partner with distributors for nationwide US deployment and scale.
             </p>
           </div>
