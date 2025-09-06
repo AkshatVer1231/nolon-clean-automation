@@ -37,7 +37,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="section-padding bg-surface">
+    <section id="team" className="pt-20 pb-16 bg-surface">
       <div className="container-custom">
         {/* Vision Statement */}
         <div className="mb-16">
