@@ -220,7 +220,11 @@
   }
   
   .hover-scale-gentle {
-    @apply transition-transform duration-300 hover:scale-102;
+    @apply transition-transform duration-300;
+  }
+  
+  .hover-scale-gentle:hover {
+    transform: scale(1.02);
   }
   
   .hover-rotate {
