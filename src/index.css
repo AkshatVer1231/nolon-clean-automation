@@ -21,7 +21,7 @@
     /* Semantic Colors */
     --muted: 220 14% 96%; /* #F3F4F6 - Light Gray */
     --muted-foreground: 220 13% 46%; /* #6B7280 - Secondary Gray */
-    --accent: 0 0% 0%; /* #000000 - Black for buttons */
+    --accent: 239 84% 67%; /* #6366F1 - Primary Purple for accents */
     --accent-foreground: 0 0% 100%;
     
     /* Status Colors */
@@ -137,7 +137,7 @@
   }
   
   .btn-accent {
-    @apply bg-accent text-accent-foreground hover:bg-accent/90
+    @apply bg-foreground text-background hover:bg-foreground/90
            px-8 py-3 rounded-lg font-semibold tracking-wide
            transition-all duration-300 hover:-translate-y-0.5;
   }
@@ -159,7 +159,7 @@
   
   /* Text Gradients */
   .text-gradient-primary {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
   }
   
   /* Section Patterns */
