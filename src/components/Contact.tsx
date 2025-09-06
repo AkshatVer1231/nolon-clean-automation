@@ -237,14 +237,6 @@ const Contact = () => {
             Join forward-thinking facility management companies preparing for autonomous cleaning solutions. 
             Early access available for qualifying partners.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-accent">
-              Partnership Inquiry
-            </Button>
-            <Button className="btn-secondary bg-white/10 border-white/20 text-white hover:bg-white hover:text-primary">
-              Download Pitch Deck
-            </Button>
-          </div>
         </div>
       </div>
     </section>
