@@ -1,25 +1,29 @@
 import { Award, MapPin, GraduationCap } from "lucide-react";
+import teamPhoto from "@/assets/team-photo.png";
 
 const Team = () => {
   const founders = [
     {
       name: "Raushan Kumar",
       role: "Co-founder",
-      image: "/placeholder.svg",
+      image: teamPhoto,
+      objectPosition: "20% 50%",
       achievements: ["Forbes 30 under 30 (2018)", "Global operations across 10+ countries", "12+ years Engineering & Business"],
       expertise: "Business & Supply Chain"
     },
     {
       name: "Sathya Narayanan R",
       role: "Co-founder", 
-      image: "/placeholder.svg",
+      image: teamPhoto,
+      objectPosition: "50% 50%",
       achievements: ["MS & PhD in Robotics from US", "17 years robotics experience", "IIIT Alumni"],
       expertise: "Robotics Navigation & Training"
     },
     {
       name: "Vijeth Rai",
       role: "Co-founder",
-      image: "/placeholder.svg", 
+      image: teamPhoto,
+      objectPosition: "82% 50%",
       achievements: ["Samsung cleaning robot developer", "150+ robots developed & deployed", "IIIT Alumni"],
       expertise: "Arms, Vision & Perception"
     }
@@ -56,7 +60,19 @@ const Team = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-primary p-1">
-                <div className="w-full h-full rounded-full bg-muted flex items-center justify-center text-2xl font-bold text-primary">
+                <img 
+                  src={founder.image}
+                  alt={founder.name}
+                  className="w-full h-full rounded-full object-cover"
+                  style={{ objectPosition: founder.objectPosition }}
+                  onError={(e) => {
+                    const target = e.currentTarget as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                <div className="w-full h-full rounded-full bg-muted items-center justify-center text-2xl font-bold text-primary" style={{ display: 'none' }}>
                   {founder.name.split(' ').map(n => n[0]).join('')}
                 </div>
               </div>
