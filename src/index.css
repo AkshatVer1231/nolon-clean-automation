@@ -164,11 +164,11 @@
   
   /* Section Patterns */
   .section-padding {
-    @apply py-20 px-4 sm:px-6 lg:px-8;
+    @apply py-12 lg:py-20 px-4 sm:px-6 lg:px-8;
   }
   
   .container-custom {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
   /* Animations */

@@ -51,20 +51,20 @@ const Product = () => {
         </div>
 
         {/* Key Features */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-20">
           {features.map((feature, index) => (
             <div 
               key={index}
               className="card-feature hover-lift animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-center mb-4">
-                <div className="p-3 rounded-lg bg-primary/10">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4">
+                <div className="p-3 rounded-lg bg-primary/10 mb-3 sm:mb-0">
                   <feature.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold ml-3 text-foreground">{feature.title}</h3>
+                <h3 className="text-base lg:text-lg font-semibold sm:ml-3 text-foreground">{feature.title}</h3>
               </div>
-              <p className="text-muted-foreground">{feature.description}</p>
+              <p className="text-muted-foreground text-sm lg:text-base">{feature.description}</p>
             </div>
           ))}
         </div>

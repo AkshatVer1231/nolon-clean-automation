@@ -84,36 +84,35 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-gradient-subtle">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Contact Info */}
-          <div>
-            <h2 className="text-4xl font-bold mb-6">
+          <div className="order-2 lg:order-1">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-center lg:text-left">
               Ready to Transform{" "}
               <span className="text-gradient-primary">Your Cleaning Operations?</span>
             </h2>
             
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-lg lg:text-xl text-muted-foreground mb-6 lg:mb-8 text-center lg:text-left">
               Join facility management companies who are preparing for the future of autonomous cleaning. 
               Request a demo to see Nolon AI robots in action.
             </p>
             
-            <div className="space-y-6 mb-8">
-              <div className="flex items-center">
-                <div className="p-3 rounded-lg bg-primary/10 mr-4">
+            <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start">
+                <div className="p-3 rounded-lg bg-primary/10 mb-3 sm:mb-0 sm:mr-4">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
-                <div>
+                <div className="text-center sm:text-left">
                   <p className="font-semibold">Email Us</p>
                   <p className="text-muted-foreground">hello@nolon.ai</p>
                 </div>
               </div>
-              
             </div>
             
             {/* Customer Criteria */}
-            <div className="bg-surface p-6 rounded-lg border border-border">
-              <h3 className="font-semibold mb-4">Ideal Customer Profile</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+            <div className="bg-surface p-4 lg:p-6 rounded-lg border border-border">
+              <h3 className="font-semibold mb-3 lg:mb-4 text-center lg:text-left">Ideal Customer Profile</h3>
+              <ul className="space-y-1 lg:space-y-2 text-xs lg:text-sm text-muted-foreground">
                 <li>• Facility management companies with 100+ employees</li>
                 <li>• $10M+ yearly revenue</li>
                 <li>• Services offices, hospitals, convention centers</li>
@@ -124,11 +123,11 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <div className="card-elevated p-8">
-            <h3 className="text-2xl font-bold mb-6">Request Demo Access</h3>
+          <div className="card-elevated p-6 lg:p-8 order-1 lg:order-2">
+            <h3 className="text-xl lg:text-2xl font-bold mb-4 lg:mb-6 text-center lg:text-left">Request Demo Access</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-6">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">First Name *</label>
                   <Input 
@@ -137,6 +136,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     placeholder="John" 
                     required
+                    className="text-sm lg:text-base"
                   />
                 </div>
                 <div>
@@ -147,6 +147,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     placeholder="Doe" 
                     required
+                    className="text-sm lg:text-base"
                   />
                 </div>
               </div>
@@ -160,6 +161,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="john@company.com" 
                   required
+                  className="text-sm lg:text-base"
                 />
               </div>
               
@@ -171,6 +173,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="Your Company Name" 
                   required
+                  className="text-sm lg:text-base"
                 />
               </div>
               
@@ -180,7 +183,7 @@ const Contact = () => {
                   name="companySize"
                   value={formData.companySize}
                   onChange={handleInputChange}
-                  className="w-full p-3 border border-border rounded-lg bg-background"
+                  className="w-full p-2 lg:p-3 border border-border rounded-lg bg-background text-sm lg:text-base"
                 >
                   <option value="">Select company size</option>
                   <option value="50-100 employees">50-100 employees</option>
@@ -195,7 +198,7 @@ const Contact = () => {
                   name="location"
                   value={formData.location}
                   onChange={handleInputChange}
-                  className="w-full p-3 border border-border rounded-lg bg-background"
+                  className="w-full p-2 lg:p-3 border border-border rounded-lg bg-background text-sm lg:text-base"
                 >
                   <option value="">Select primary location</option>
                   <option value="California">California</option>
@@ -213,13 +216,14 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="Tell us about your cleaning operations and specific needs..."
                   rows={4}
+                  className="text-sm lg:text-base"
                 />
               </div>
               
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="btn-primary w-full group"
+                className="btn-primary w-full group text-sm lg:text-base"
               >
                 {isSubmitting ? "Submitting..." : "Request Demo Access"}
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -229,29 +233,29 @@ const Contact = () => {
         </div>
         
         {/* CTA Banner */}
-        <div className="mt-20 bg-gradient-primary rounded-xl p-8 text-center text-white">
-          <h3 className="text-2xl font-bold mb-4">
+        <div className="mt-12 lg:mt-20 bg-gradient-primary rounded-xl p-6 lg:p-8 text-center text-white">
+          <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">
             Be Part of the Physical AI Revolution
           </h3>
-          <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
+          <p className="text-sm lg:text-lg opacity-90 mb-4 lg:mb-6 max-w-2xl mx-auto">
             Join forward-thinking facility management companies preparing for autonomous cleaning solutions. 
             Early access available for qualifying partners.
           </p>
         </div>
 
         {/* Quote Section */}
-        <div className="mt-16 text-center">
-          <blockquote className="text-xl italic mb-6 text-foreground max-w-4xl mx-auto">
+        <div className="mt-12 lg:mt-16 text-center">
+          <blockquote className="text-lg lg:text-xl italic mb-4 lg:mb-6 text-foreground max-w-4xl mx-auto">
             "The next wave of AI will be Physical AI. Everything that moves will be robotic someday, and it will be soon" - Jensen Huang
           </blockquote>
           
-          <div className="bg-gradient-primary rounded-xl p-8 text-white max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-white">
+          <div className="bg-gradient-primary rounded-xl p-6 lg:p-8 text-white max-w-3xl mx-auto">
+            <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 text-white">
               <a href="mailto:hello@nolon.ai" className="text-white hover:text-white/90 transition-colors">
                 Join us
               </a>
             </h3>
-            <p className="text-lg text-white/90">
+            <p className="text-sm lg:text-lg text-white/90">
               We are building the future of Embodied AI agents. Come join us in this exciting journey.
             </p>
           </div>
