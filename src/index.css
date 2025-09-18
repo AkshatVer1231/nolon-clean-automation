@@ -297,13 +297,152 @@
   .card-hover {
     @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:scale-105;
   }
-  
+
   .card-tilt {
     @apply transition-transform duration-300;
   }
-  
+
   .card-tilt:hover {
     transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateZ(20px);
+  }
+
+  /* Advanced hover animations */
+  .hover-bounce {
+    @apply transition-transform duration-200 hover:animate-bounce;
+  }
+
+  .hover-pulse {
+    @apply transition-all duration-300 hover:animate-pulse;
+  }
+
+  .hover-wiggle {
+    @apply transition-transform duration-200;
+  }
+
+  .hover-wiggle:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  .hover-slide-up {
+    @apply transition-transform duration-300 hover:-translate-y-3;
+  }
+
+  .hover-slide-down {
+    @apply transition-transform duration-300 hover:translate-y-1;
+  }
+
+  .hover-slide-left {
+    @apply transition-transform duration-300 hover:-translate-x-2;
+  }
+
+  .hover-slide-right {
+    @apply transition-transform duration-300 hover:translate-x-2;
+  }
+
+  .hover-expand {
+    @apply transition-all duration-300 hover:scale-110 hover:shadow-xl;
+  }
+
+  .hover-shrink {
+    @apply transition-transform duration-300 hover:scale-95;
+  }
+
+  .hover-flip-x {
+    @apply transition-transform duration-500 hover:rotate-x-180;
+  }
+
+  .hover-flip-y {
+    @apply transition-transform duration-500 hover:rotate-y-180;
+  }
+
+  .hover-skew {
+    @apply transition-transform duration-300 hover:skew-x-3 hover:skew-y-1;
+  }
+
+  .hover-border-grow {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .hover-border-grow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid hsl(var(--primary));
+    border-radius: inherit;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+
+  .hover-border-grow:hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .hover-gradient-shift {
+    @apply transition-all duration-500;
+    background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)));
+    background-size: 200% 200%;
+  }
+
+  .hover-gradient-shift:hover {
+    background-position: 100% 100%;
+  }
+
+  .hover-text-color {
+    @apply transition-colors duration-300 hover:text-primary;
+  }
+
+  .hover-bg-fade {
+    @apply transition-all duration-300 hover:bg-primary/10;
+  }
+
+  .hover-shadow-glow {
+    @apply transition-all duration-300;
+  }
+
+  .hover-shadow-glow:hover {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+  }
+
+  .hover-underline-expand {
+    @apply relative transition-all duration-300;
+  }
+
+  .hover-underline-expand::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: hsl(var(--primary));
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .hover-underline-expand:hover::after {
+    width: 100%;
+  }
+
+  .hover-float {
+    @apply transition-transform duration-300;
+  }
+
+  .hover-float:hover {
+    animation: float 2s ease-in-out infinite;
+  }
+
+  .hover-blur {
+    @apply transition-all duration-300 hover:blur-sm;
+  }
+
+  .hover-focus {
+    @apply transition-all duration-300;
+  }
+
+  .hover-focus:hover {
+    filter: brightness(1.1) contrast(1.1);
   }
 }
 
@@ -348,6 +487,22 @@
     }
     50% {
       transform: translateY(-10px);
+    }
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
     }
   }
   
