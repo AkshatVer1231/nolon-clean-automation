@@ -41,15 +41,19 @@ const Header = () => {
 
           {/* Professional Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <a
                 key={item.label}
                 href={item.href}
-                className={`font-medium transition-colors duration-200 ${
+                className={`nav-link font-medium transition-all duration-300 ${
                   isScrolled 
                     ? 'text-muted-foreground hover:text-primary' 
                     : 'text-white/90 hover:text-white'
                 }`}
+                style={{ 
+                  animationDelay: `${index * 0.1}s`,
+                  animation: isScrolled ? 'fadeInUp 0.6s ease-out forwards' : 'none'
+                }}
               >
                 {item.label}
               </a>
@@ -85,20 +89,28 @@ const Header = () => {
 
         {/* Professional Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-border">
+          <div className="md:hidden mobile-menu-backdrop border-t border-border nav-menu-enter active">
             <div className="px-4 py-6 space-y-4">
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  className="block text-muted-foreground hover:text-primary transition-all duration-300 font-medium nav-item-slide visible hover:translate-x-2"
+                  style={{ 
+                    animationDelay: `${index * 0.1}s`,
+                    animation: `fadeInUp 0.6s ease-out ${index * 0.1}s forwards`
+                  }}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
               <Button 
-                className="bg-primary text-white hover:bg-primary/90 w-full mt-4 font-semibold px-6 py-3 rounded-lg"
+                className="bg-primary text-white hover:bg-primary/90 w-full mt-4 font-semibold px-6 py-3 rounded-lg hover-lift"
+                style={{ 
+                  animationDelay: `${navItems.length * 0.1}s`,
+                  animation: `fadeInUp 0.6s ease-out ${navItems.length * 0.1}s forwards`
+                }}
                 onClick={() => {
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                   setIsOpen(false);
