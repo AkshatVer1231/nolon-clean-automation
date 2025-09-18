@@ -89,12 +89,12 @@ const Contact = () => {
           <div className="order-2 lg:order-1">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-center lg:text-left">
               Ready to Transform{" "}
-              <span className="text-gradient-primary">Your Cleaning Operations?</span>
+              <span className="text-gradient-primary">Your Operations?</span>
             </h2>
             
             <p className="text-lg lg:text-xl text-muted-foreground mb-6 lg:mb-8 text-center lg:text-left">
-              Join facility management companies who are preparing for the future of autonomous cleaning. 
-              Request a demo to see Nolon AI robots in action.
+              Join companies who are preparing for the future of autonomous AI robotics. 
+              Request a demo to see our AI robots in action.
             </p>
             
             <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
@@ -117,7 +117,7 @@ const Contact = () => {
                 <li>• $10M+ yearly revenue</li>
                 <li>• Services offices, hospitals, convention centers</li>
                 <li>• Operating in California, New York, or Texas</li>
-                <li>• Requires frequent washroom cleaning services</li>
+                <li>• Requires automation for repetitive tasks</li>
               </ul>
             </div>
           </div>
@@ -214,7 +214,7 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell us about your cleaning operations and specific needs..."
+                  placeholder="Tell us about your operations and specific automation needs..."
                   rows={4}
                   className="text-sm lg:text-base"
                 />
@@ -238,7 +238,7 @@ const Contact = () => {
             Be Part of the Physical AI Revolution
           </h3>
           <p className="text-sm lg:text-lg opacity-90 mb-4 lg:mb-6 max-w-2xl mx-auto">
-            Join forward-thinking facility management companies preparing for autonomous cleaning solutions. 
+            Join forward-thinking companies preparing for autonomous AI robotics solutions. 
             Early access available for qualifying partners.
           </p>
         </div>

@@ -4,13 +4,13 @@ const Product = () => {
   const features = [
     {
       icon: Target,
-      title: "Best Cleaning Quality",
-      description: "In-contact cleaning with appropriate chemicals following Sinner's circle compliance for industry-leading results."
+      title: "Best Task Quality",
+      description: "Precision task execution with appropriate tools and protocols for industry-leading results."
     },
     {
       icon: Zap,
-      title: "Faster Floor Cleaning",
-      description: "Integrated wiper and suction system at bottom for efficient floor maintenance and debris removal."
+      title: "Faster Task Execution",
+      description: "Integrated multi-tool system for efficient task completion and material handling."
     },
     {
       icon: Clock,
@@ -25,7 +25,7 @@ const Product = () => {
     {
       icon: Wrench,
       title: "Tool Change System",
-      description: "Automated tool changing for specialized cleaning tasks including commode and urinal maintenance."
+      description: "Automated tool changing for specialized tasks including precision operations and maintenance work."
     },
     {
       icon: Battery,
@@ -42,10 +42,10 @@ const Product = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">
             Autonomous AI Robots for{" "}
-            <span className="text-gradient-primary">Commercial Cleaning</span>
+            <span className="text-gradient-primary">Commercial Operations</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            End-to-end washroom cleaning with AI-driven autonomy. 
+            End-to-end task automation with AI-driven autonomy. 
             Specialized for commercial spaces including offices, hospitals, and factories.
           </p>
         </div>

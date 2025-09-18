@@ -28,13 +28,6 @@ const Team = () => {
     }
   ];
 
-  const advisors = [
-    { name: "Shlok Sobti", title: "CEO of Xook", background: "Former Ola and Myntra executive" },
-    { name: "Mehul Anand", title: "Robotics Specialist", background: "Ex-Canvas (US)" },
-    { name: "Arvind Sairam", title: "Academic Advisor", background: "University of Bristol" },
-    { name: "Marzan Alam", title: "Research Advisor", background: "University of New Hampshire" },
-    { name: "Rajagopal N", title: "Technical Advisor", background: "IIT Roorkee" }
-  ];
 
   return (
     <section id="team" className="pt-20 pb-16 bg-surface">
@@ -94,11 +87,11 @@ const Team = () => {
               className="card-elevated p-6 lg:p-8 text-center hover-lift animate-fade-in-up transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="w-20 lg:w-24 h-20 lg:h-24 mx-auto mb-4 lg:mb-6 rounded-full bg-gradient-primary p-1 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <div className="w-20 lg:w-24 h-20 lg:h-24 mx-auto mb-4 lg:mb-6 rounded-lg bg-gradient-primary p-1 transition-all duration-300 group-hover:scale-110 group-hover:rotate-2">
                 <img 
                   src={founder.image}
                   alt={founder.name}
-                  className="w-full h-full rounded-full object-cover transition-all duration-300 group-hover:brightness-110"
+                  className="w-full h-full rounded-lg object-cover transition-all duration-300 group-hover:brightness-110"
                   onError={(e) => {
                     const target = e.currentTarget as HTMLImageElement;
                     target.style.display = 'none';
@@ -106,7 +99,7 @@ const Team = () => {
                     if (fallback) fallback.style.display = 'flex';
                   }}
                 />
-                <div className="w-full h-full rounded-full bg-muted items-center justify-center text-xl lg:text-2xl font-bold text-primary transition-all duration-300" style={{ display: 'none' }}>
+                <div className="w-full h-full rounded-lg bg-muted items-center justify-center text-xl lg:text-2xl font-bold text-primary transition-all duration-300" style={{ display: 'none' }}>
                   {founder.name.split(' ').map(n => n[0]).join('')}
                 </div>
               </div>
@@ -127,28 +120,6 @@ const Team = () => {
         </div>
 
 
-        {/* Advisory Team */}
-        <div className="bg-background rounded-xl p-6 lg:p-8 animate-fade-in-up transition-all duration-500 hover:shadow-lg" style={{ animationDelay: '0.6s' }}>
-          <h3 className="text-xl lg:text-2xl font-bold text-center mb-6 lg:mb-8 transition-colors duration-300 hover:text-primary">Advisory Team & Mentors</h3>
-          
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-            {advisors.map((advisor, index) => (
-              <div 
-                key={index}
-                className="p-4 lg:p-6 rounded-lg border border-border hover:shadow-soft transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="flex items-start mb-2 lg:mb-3">
-                  <GraduationCap className="h-4 lg:h-5 w-4 lg:w-5 text-primary mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-foreground text-sm lg:text-base">{advisor.name}</h4>
-                    <p className="text-xs lg:text-sm text-primary">{advisor.title}</p>
-                  </div>
-                </div>
-                <p className="text-xs lg:text-sm text-muted-foreground">{advisor.background}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Team Philosophy */}
         <div className="mt-12 lg:mt-16 text-center">

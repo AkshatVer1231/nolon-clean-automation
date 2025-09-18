@@ -23,7 +23,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 mb-8 lg:mb-12 leading-relaxed max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
-              We are an AI Robotics company solving repetitive & mundane physical tasks, at scale, starting with the cleaning services market.
+              We are an AI Robotics company solving repetitive & mundane physical tasks, at scale, across various industries and applications.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mb-8 lg:mb-16 justify-center lg:justify-start">
@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-brand transition-all duration-500 hover:scale-105 card-tilt">
               <img 
                 src={heroRobot} 
-                alt="Professional autonomous cleaning solution in commercial environment"
+                alt="Professional autonomous AI robotics solution in commercial environment"
                 className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />

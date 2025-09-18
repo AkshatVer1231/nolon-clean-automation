@@ -5,7 +5,7 @@ const Problem = () => {
     {
       icon: Users,
       title: "Labor Shortage Crisis",
-      description: "Janitor job growth exceeds the rate of workers entering the field. 29% of 2.5M janitorial employees are foreign-born, with 17% of illegal immigrants working in cleaning.",
+      description: "Labor-intensive job growth exceeds the rate of workers entering the field. Many industries face significant workforce shortages in repetitive physical tasks.",
       stats: "2.5M workers, 29% foreign-born"
     },
     {
@@ -17,7 +17,7 @@ const Problem = () => {
     {
       icon: AlertTriangle,
       title: "Dignity of Work",
-      description: "Perception of cleaning jobs as mundane creates high attrition rates. Workers seek more meaningful opportunities, creating a cycle of instability.",
+      description: "Perception of repetitive jobs as mundane creates high attrition rates. Workers seek more meaningful opportunities, creating a cycle of instability.",
       stats: "High attrition in entry-level"
     }
   ];
@@ -27,12 +27,12 @@ const Problem = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">
-            The Cleaning Industry's{" "}
+            The Industry's{" "}
             <span className="text-gradient-primary">Critical Challenges</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Three fundamental problems are disrupting the $445 billion global cleaning industry,
-            creating an urgent need for autonomous solutions.
+            Three fundamental problems are disrupting multiple industries worth hundreds of billions globally,
+            creating an urgent need for autonomous AI robotics solutions.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const Problem = () => {
             <h3 className="text-xl lg:text-2xl font-bold mb-4 lg:mb-6">Market Impact</h3>
             <div className="space-y-3 lg:space-y-4">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 lg:p-4 bg-background rounded-lg border border-border gap-2 sm:gap-0">
-                <span className="font-medium text-foreground text-sm lg:text-base">US Cleaning Services Market</span>
+                <span className="font-medium text-foreground text-sm lg:text-base">Global Automation Market</span>
                 <span className="text-xl lg:text-2xl font-bold text-primary">$83B</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 lg:p-4 bg-background rounded-lg border border-border gap-2 sm:gap-0">

@@ -11,8 +11,8 @@ const Footer = () => {
               Nolon AI
             </div>
             <p className="text-muted-foreground mb-4">
-              Physical AI robots for commercial cleaning. 
-              We CLEAN so you can DREAM.
+              Physical AI robots for commercial automation. 
+              We AUTOMATE so you can INNOVATE.
             </p>
             <div className="flex items-center text-sm">
               <Mail className="h-4 w-4 mr-2" />
